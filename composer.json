@@ -1,0 +1,31 @@
+{
+    "name": "itzdevsatvik/laravel-package-health-checker",
+    "description": "Check Laravel packages for deprecated code, security vulnerabilities, and version compatibility",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Itzdevsatvik\\PackageHealthChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Satvik",
+            "email": "smv@narola.email"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Itzdevsatvik\\PackageHealthChecker\\Providers\\PackageHealthCheckerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
