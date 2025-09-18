@@ -26,12 +26,12 @@ You can install the package via Composer:
 
 2. php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Providers\PackageHealthCheckerServiceProvider" --tag=packagehealthchecker-config
 
-3. php artisan migrate
-
 ## Console Command
+First run migration
+-> php artisan migrate
 
 Run the health check from the command line:
-php artisan package-health:check
+-> php artisan package-health:check
 
 To check the status of all packge:
-"Your-website/package-health"
+-> "Your-website/package-health"
