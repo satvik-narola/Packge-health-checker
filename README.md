@@ -22,7 +22,7 @@ A Laravel package to check all installed packages for deprecated code, security 
 You can install the package via Composer:
 
 ```bash
-composer require itzdevsatvik/laravel-package-health-checker
+composer require itzdevsatvik/laravel-package-health-checker:dev-main
 
 php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Providers\PackageHealthCheckerServiceProvider" --tag=packagehealthchecker-config
 
