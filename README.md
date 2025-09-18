@@ -23,3 +23,5 @@ You can install the package via Composer:
 
 ```bash
 composer require itzdevsatvik/laravel-package-health-checker
+
+php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Providers\PackageHealthCheckerServiceProvider" --tag=packagehealthchecker-config
