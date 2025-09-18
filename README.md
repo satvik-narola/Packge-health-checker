@@ -25,3 +25,14 @@ You can install the package via Composer:
 composer require itzdevsatvik/laravel-package-health-checker
 
 php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Providers\PackageHealthCheckerServiceProvider" --tag=packagehealthchecker-config
+
+## Console Command
+
+Run the health check from the command line:
+php artisan package-health:check
+
+Use the --no-cache option to force a fresh check:
+php artisan package-health:check --no-cache
+
+PACKAGE_HEALTH_ALLOWED_EMAILS="admin@example.com,user@example.com"
+PACKAGE_HEALTH_ALLOWED_DOMAINS="example.com,company.com"
