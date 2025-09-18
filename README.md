@@ -31,8 +31,5 @@ php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Provide
 Run the health check from the command line:
 php artisan package-health:check
 
-Use the --no-cache option to force a fresh check:
-php artisan package-health:check --no-cache
-
-PACKAGE_HEALTH_ALLOWED_EMAILS="admin@example.com,user@example.com"
-PACKAGE_HEALTH_ALLOWED_DOMAINS="example.com,company.com"
+To check the status of all packge:
+"Your-website/package-health"
