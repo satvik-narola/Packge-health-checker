@@ -24,13 +24,10 @@ You can install the package via Composer:
 ```bash
 1. composer require itzdevsatvik/laravel-package-health-checker:dev-main
 
-```bash
 2. php artisan vendor:publish --provider="Itzdevsatvik\PackageHealthChecker\Providers\PackageHealthCheckerServiceProvider" --tag=packagehealthchecker-config
 
-```bash
 3. php artisan migrate
 
-```bash
 ## Console Command
 
 Run the health check from the command line:
